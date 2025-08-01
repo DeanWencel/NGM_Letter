@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Love Letter</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;500&display=swap');
+
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: #fff8f0;
+      font-family: 'Open Sans', sans-serif;
+      overflow-x: hidden;
+      animation: fadeIn 2s ease-in;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 80px auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      position: relative;
+      animation: slideUp 1s ease-in-out;
+    }
+
+    .polaroid {
+      position: absolute;
+      top: -40px;
+      right: -40px;
+      width: 200px;
+      background: white;
+      padding: 10px;
+      box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+      transform: rotate(5deg);
+      transition: transform 0.5s ease;
+    }
+
+    .polaroid:hover {
+      transform: rotate(0deg) scale(1.05);
+    }
+
+    .polaroid img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+
+    .letter {
+      font-family: 'Quicksand';
+      font-size: 1.2rem;
+      line-height: 1.8;
+      color: #333;
+    }
+
+    .signature {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2rem;
+      margin-top: 15px;
+      margin-bottom: 1px;
+      text-align: right;
+      color: #b35d6a;
+      animation: fadeIn 2.5s ease-in-out;
+    }
+    .hover-name {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    }
+
+    .kitty-above {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%) scale(0.7);
+    width: 60px;
+    opacity: 0;
+    transition: all 0.4s ease;
+    pointer-events: none;
+    }
+
+    .hover-name:hover .kitty-above,
+    .hover-name:active .kitty-above {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+    }
+    #intro-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff0f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    animation: fadeIn 1s ease;
+    }
+
+    #open-button {
+    font-size: 1.5rem;
+    padding: 15px 30px;
+    background: #ffcce0;
+    border: none;
+    border-radius: 12px;
+    font-family: 'Quicksand', sans-serif;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    }
+
+    #open-button:hover {
+    background: #ffb3d1;
+    transform: scale(1.05);
+    }
+    .letter p {
+    text-indent: 2em;
+    margin-bottom: 1.2em;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from {
+        transform: translateY(40px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+    <audio id="bg-music" src="https://www.bensound.com/bensound-music/bensound-romantic.mp3" loop></audio>
+    <div id="intro-screen">
+  <button id="open-button">Open Love Letter 💌</button>
+</div>
+  <div class="container" id="letter-container" style="display: none;">
+    <div class="polaroid">
+      <img src="https://i.imgur.com/sRJTjBX.jpg" alt="Polaroid Picture" />
+    </div>
+    <div class="letter">
+        <div class="signature" style="text-align: left; margin-bottom: 20px;">
+            To my dearest, 
+            <span class="hover-name">
+                Phoebe
+                <img class="kitty-above" src="https://imgur.com/sxCbZA2.png" alt="Hello Kitty" />
+            </span>,
+            </div>
+        <p>Hello my baby, Happy National Girlfriends Day to you!! You deserve so much love, especially for how you love me. Baby, I know we haven't actually put a label onto it yet, and it is pretty bold of me to say this. But to me, I've already thought of us like we're a married couple. Is that weird? T^T I'm sorry, but at the same time I'm happy to think about it. Because it's with you whom I am imagining this with, I feel complacent with you that I am sure to spend my future with you. As many times as I've said this, I am truly grateful for you, for coming into my life and staying. You're the best girl anyone could ever have, and I am the luckiest boy because I am the one who has you. Life became much better, ever since you entered into mine. You made me better, you showed me that I was capable of being loved, loved in a way so genuine and pure. 
+        
+        <p>This day I want to make it special for you, I know how things have been lately for you, and tomorrow is an even bigger load. I wish for you to pass, I pray for it everyday, you deserve to pass my baby. I appreciate the small and big things you do to me and for me, even the simplest updates or the simple hold of my hand by you, makes my heart beat loudly. Phoebe Gilien S. Paiste, I love you, and all of you. All your behaviors, all you quirks, all that you do, I accept you and I will always keep falling in love with you. Each day that you're here is a day I cherish, and the more I get to know you the deeper I fall for you. Take care of yourself always, eat on time, rest, don't push yourself too much, stay safe always my baby, MWAMWAMWA. Just know I'll always be here, holding you close to my heart and loving all of you. I wuv u, my Phoebe!
+      <div class="signature">With all my heart, </div>
+        <div class="signature">Dean </div>
+    </div>
+  </div>
+  <script>
+  document.getElementById('open-button').addEventListener('click', function () {
+    document.getElementById('intro-screen').style.display = 'none';
+    document.getElementById('letter-container').style.display = 'block';
+  });
+</script>
+</body>
+</html>
